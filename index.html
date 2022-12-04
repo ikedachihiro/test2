@@ -1,20 +1,25 @@
 <html>
-<head>
-<meta charset="utf-8">
-<title>3D化結果</title>
-</head>
-<body>
- <font size="5">2022年12月10日　ドローン取材意見交換会</font><br>
-<br>
-<font size="4">飛び方を記載する？</font><br>
-</body>
-<div id="loader-bg">
-<div id="loader">
- <img src="loading.gif" width="80" height="80" alt="Loading..." />
-    <p>Loading...</p>
-  </div>
-</div>
-<div id="contents">
-</div>
-
+    <head>
+        <title>3D化結果</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    </head>
+    <body>
+	<font size="5">2022年12月10日　ドローン取材意見交換会</font><br>
+	<br>
+	<font size="4">飛び方を記載する</font><br>
+        <model-viewer
+          ar
+          ar-modes="scene-viewer webxr quick-look"
+          src="./Glb_narita_kouiki.glb"
+          alt="Cyawan"
+          auto-rotate
+          camera-controls
+        ></model-viewer>
+        <br>
+<p><img src="loading.gif" alt="Loading" width="1000" height="600"></p>
+    </body>
 </html>
+
+
